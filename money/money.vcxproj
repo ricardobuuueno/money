@@ -140,11 +140,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="b3_reader.cpp" />
     <ClCompile Include="listener.cpp" />
     <ClCompile Include="loader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="b3_reader.hpp" />
     <ClInclude Include="listener.hpp" />
+    <ClInclude Include="reader.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
