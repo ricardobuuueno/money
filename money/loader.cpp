@@ -11,22 +11,29 @@ int main(int argc, char* argv[])
 
     listener ltn{ "D:\\money\\exchanges\\1\\new", 1000 };
     
-    while (true)
+    try
     {
-
-        try
+        while (true)
         {
-            if (ltn.found()) {
-                ltn.process();
+
+            try
+            {
+                if (ltn.found()) {
+                    ltn.process();
+                }
+
+                ltn.wait();
+            }
+            catch (...)
+            {
+                break;
             }
 
-            ltn.wait();
         }
-        catch (...)
-        {
-            break;
-        }
-
+    }
+    catch (std::exception& e) 
+    {
+        std::cout << '\n' << e.what() << '\n';
     }
 
     return 0;

@@ -140,12 +140,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="b3_reader.cpp" />
     <ClCompile Include="listener.cpp" />
     <ClCompile Include="loader.cpp" />
+    <ClCompile Include="reader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="b3_reader.hpp" />
     <ClInclude Include="listener.hpp" />
     <ClInclude Include="reader.hpp" />
   </ItemGroup>
